@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+ul {
+  position: relative;
+  display: flex;
+}
+
+ul li {
+  /* 如果设置为inline-block，会有空隙 */
+  /* https://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements */
+  list-style: none;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+}
+
+ul li a {
+  color: #080808;
+  text-decoration: none;
+}
+
+li.logo {
+    float: left;
+    margin-left: 20%;
+    position: relative;
+}
+
+.slider {
+  width: 100px;
+  height: 40px;
+  background-color: #6495ED;
+  border-radius: 4px;
+  position: absolute;
+  left: 393px;
+  bottom: 1;
+  z-index: -1;
+  transition: all ease 0.4s;
+  animation: 2s ease-in-out waves infinite;
+}
+
+li:nth-child(2):hover ~ .slider {
+  left: 393px;
+}
+
+li:nth-child(3):hover ~ .slider {
+  left: 511px;
+}
+
+li:nth-child(4):hover ~ .slider {
+  left: 631px;
+}
+
+li:nth-child(5):hover ~ .slider {
+  left: 751px;
+}
+
+li:nth-child(6):hover ~ .slider {
+  left: 871px;
+}
+
