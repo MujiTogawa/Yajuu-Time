@@ -43,36 +43,55 @@ li.logo {
     position: relative;
 }
 
-.slider {
-  width: 100px;
-  height: 40px;
+ul li div {
+  /* 如果设置为inline-block，会有空隙 */
+  /* https://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements */
+  list-style: none;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.nav1 a {
+  color: #080808;
+  text-decoration: none;
+}
+
+.nav1 {
+  position: relative;/* 设置相对定位 */
+  display: inline-block;/* 让元素具有块级元素和行内元素的特性,即将块级元素转化为内联元素 */
+  list-style: none;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.nav2 {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 81px;
+  line-height: 13px;
+}
+
+.nav2 a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.nav2 a:hover {
+  background-color: #44b812
+}
+
+.nav1:hover .nav2 {
+  display: block;
+}
+
+.nav1:hover,li:hover {
   background-color: #6495ED;
-  border-radius: 4px;
-  position: absolute;
-  left: 393px;
-  bottom: 1;
-  z-index: -1;
-  transition: all ease 0.4s;
-  animation: 2s ease-in-out waves infinite;
 }
 
-li:nth-child(2):hover ~ .slider {
-  left: 393px;
+li.logo:hover {
+  background-color: #ffffff;
 }
-
-li:nth-child(3):hover ~ .slider {
-  left: 511px;
-}
-
-li:nth-child(4):hover ~ .slider {
-  left: 631px;
-}
-
-li:nth-child(5):hover ~ .slider {
-  left: 751px;
-}
-
-li:nth-child(6):hover ~ .slider {
-  left: 871px;
-}
-
