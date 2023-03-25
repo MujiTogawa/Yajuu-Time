@@ -1,15 +1,14 @@
 html,
 body {
   margin: 0;
-  font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+  font-family: "PingFang SC", "Microsoft Yahei", sans-serif;  
 }
 
 * {
   box-sizing: border-box;
 }
 
-ul,
-li {
+ul, li {
   margin: 0;
   padding: 0;
 }
@@ -94,4 +93,80 @@ ul li div {
 
 li.logo:hover {
   background-color: #ffffff;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);/*从0度开始*/
+  }
+  100% {
+    transform: rotateZ(360deg);/*360度结束*/
+  }
+}
+
+.c1 {
+  width: 220px;
+  height: 220px;
+  border: 4px solid #6495ED;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+  animation: rotate 4s linear infinite;
+}
+
+.u-backlink {
+  position: relative;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.u-white-ff {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+.time {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.time-L {
+  font-size: 55px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.centerfocus {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  font-weight: bold;
+}
+
+.footer-link {
+  color: #6495ED;
 }

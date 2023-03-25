@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    transition: all 1s;
+}
+
+.switcher {
+     position: absolute;
+     top: 20px;
+     right: 25px;
+     width: 40px;
+     height: 20px;
+     border: 2px solid black;
+     border-radius: 20px;
+     cursor: pointer;
+     transition: all 3s;
+}
+
+.bai {   
+     position: absolute;
+     top: 2px;
+     left: 2px;
+     height: 13px;
+     width: 13px;
+     background-color: rgb(0, 0, 0);
+     border-radius: 50%;
+     transition: all 1s;
+}
+
+.hei {   
+     position: absolute;
+     top: 2px;
+     right: 2px;
+     height: 13px;
+     width: 13px;
+     background-color: #44b812;
+     border-radius: 50%;
+     transition: all 1s;
+}
+
+p {
+     margin: -60px auto;
+     width: 1100px;
+     text-align-last: center;
+}
+
+.back {
+    position: absolute;
+    top: 16.5px;
+    left: 18.5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #6495ED;
+}

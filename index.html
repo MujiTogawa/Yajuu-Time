@@ -2,73 +2,20 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8"/>
-    <!-- chi小提示:Keywords现在已经不推荐添加 详情: https://blog.skk.moe/post/say-no-to-meta-keywords/ -->
-    <!-- <meta name="keywords" content="HTML,Yaju,Time,木屐落在水洼了,MujiTogawa"/> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <!-- 注意行距 -->
     <title>Yaju Time</title>
     <link rel="shortcut icon" href="/icon32x32.ico"/>
-    <!-- 一般style放标头 -->
-    <style>
-      .center {
-        text-align: center;
-      }
-      h1 {
-        text-align: center;
-      }
+    <style> 
       body {
-        width: 100%;
-        height: 100%;
         background-color: #6495ED;
-        background-image: url(images/background.webp);
-      }
-      @keyframes rotate {
-        0% {
-          transform: rotateZ(0deg);/*从0度开始*/
-        }
-        100% {
-          transform: rotateZ(360deg);/*360度结束*/
-        }
-      }
-      .c1 {
-        width: 220px;
-        height: 220px;
-        border: 4px solid #6495ED;
-        border-radius: 50%;
-        overflow: hidden;
-        margin: 0 auto;
-        display: block;
-        animation: rotate 4s linear infinite;
-      }
-      .u-backlink {
-        position: relative;
-        text-align: center;
-        padding: 0.5em;
-      }
-      .u-white-ff {
-        color: #ffffff;
-        background-color: #ffffff;
-      }
-      .time {
-        font-size: 27px;
-        font-weight: bold;
-      }
-      .bold {
-        font-weight: bold;
-      }
-      a {
-        font-weight: bold;
-      }
-      .footer-link {
-        color: #6495ED;
-      }
+        background-image: url(/images/background.webp);
+      }  
     </style>
   </head>
   <body>
-    <!-- chi小提示：不要HTML5和4混用，尽量用最新的tag,把样式的工作交给css -->
-    <!-- <font> <b> <center> 都是HTML4的tag HTML5已经弃用 -->
     <header>
       <section class="u-backlink u-white-ff">
         <div class="nav">
@@ -97,7 +44,7 @@
       </section>
     </header>
     
-    <h1 class="center">逸一时，误一世！</h1>
+    <h1>逸一时，误一世！</h1>
     <div class="c1 center">
       <img id="light" src="/images/gamar.png" alt="gamar" width="220" height="220">
     </div>
@@ -111,7 +58,6 @@
           使用标记flag完成
   
       */
-     // chi小tip：if else 括号 分号要空格 符合eslint规范。分号不影响
       // 1.获取图片对象
       var light = document.getElementById("light");
   
@@ -130,7 +76,7 @@
           
       }
     </script>
-  <br>
+  <br/>
     <div class="box center time"></div>
     <script type="module" src="/js/app.js"></script>
 
@@ -164,22 +110,20 @@
     onload="initSakanaWidget()"
     src="https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.js"
   ></script>
-  <!-- chi小提示: footer应该丢body前!-->
-  <!-- 正常的h5顺序应该是 header - section - footer -->
   
   <br/>
-  <!-- 没有标签闭合的 如br 要加"/" -->
+
   <br/>
 
-  <footer>
-    <section>
-      <div class="h1 center">
-        &copy;<!-- 不要用© 用替代品 &copy; --> 2022~2023 by <a href="https://mjt.asia/" target="_blank"><font color="#6495ED"><b>Muji Togawa</b></font></a>
-        <p><font size="3"><b>Made With Love</b></font> <font color="# FF0000" size="5">❤</font></p>
+  <section>
+    <footer>   
+      <div class="center">
+        &copy; 2022~2023 by <a href="https://mjt.asia/" target="_blank" class="bold footer-link">Muji Togawa</a>
+        <p class="bold">Made With Love 💖 || With Thanks to <a href="https://blog.chihuo2104.dev/#/" target="_blank" class="bold footer-link">Chihuo2104</a></p>
         <p>View it on <a href="https://github.com/MujiTogawa/Yaju-Time" target="_blank" class="bold footer-link">Github</a></p>
       </div>
-    </section>
-  </footer>
-  <br>
+    </footer>
+  </section> 
+  <br/>
   </body>
 </html>
