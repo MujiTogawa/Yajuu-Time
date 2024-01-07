@@ -1,6 +1,6 @@
-# 🐗 「Yaju Time」
+# 🐗 「Yajuu Time」
 
-A HTML Clock with ***Yaju Senpai*** at the background.
+A HTML Clock with ***Yajuu Senpai*** at the background.
 
 With highly respects to ***Gamar***, my physics teacher
 
